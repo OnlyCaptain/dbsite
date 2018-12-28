@@ -1,0 +1,17 @@
+{% extends "db_app/base.html" %}
+
+{% block content %}
+
+    <p>这个页面列出所有话题</p>
+
+    <ul>
+        {% for topic in topics %}
+            <li>
+                <a href="{% url 'db_app:topic' topic.id %}">{{ topic }}</a>
+            </li>
+        {% empty %}
+            <li>No topics have been added yet.</li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
