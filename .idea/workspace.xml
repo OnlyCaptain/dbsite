@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3db5376-cb4e-4ef2-8892-6431fddd4ba5" name="Default Changelist" comment="" />
+    <list default="true" id="d3db5376-cb4e-4ef2-8892-6431fddd4ba5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db_site/db_site/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="131" column="10" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
+            <state relative-caret-position="253">
+              <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_site/db_app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -130,16 +141,22 @@
     <entry file="file://$PROJECT_DIR$/db_site/db_app/__init__.py" />
     <entry file="file://$PROJECT_DIR$/db_site/db_app/admin.py" />
     <entry file="file://$PROJECT_DIR$/db_site/db_app/apps.py" />
-    <entry file="file://$PROJECT_DIR$/db_site/db_app/models.py" />
     <entry file="file://$PROJECT_DIR$/db_site/db_app/tests.py" />
     <entry file="file://$PROJECT_DIR$/db_site/db_app/urls.py" />
     <entry file="file://$PROJECT_DIR$/db_site/db_app/views.py" />
     <entry file="file://$PROJECT_DIR$/db_site/manage.py" />
     <entry file="file://$PROJECT_DIR$/db_site/db_site/urls.py" />
+    <entry file="file://$PROJECT_DIR$/db_site/db_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db_site/db_site/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="131" column="10" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
+        <state relative-caret-position="253">
+          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
     </entry>
