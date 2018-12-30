@@ -48,3 +48,27 @@ py_website
 
 ```
 
+
+### 运行说明
+
+- 代码迁移之后：
+
+```bash
+python manage.py migrate
+```
+
+- 运行在本地：
+
+```bash
+python manage.py runserver
+```
+
+- 监听来自其他人的连接（部署在服务器上）
+
+    - 在`py_website/settings.py` 文件中修改表项：`ALLOWED_HOSTS = []` 里面添加你的 ip 地址。
+    - 运行：
+
+    ```bash
+    python manage.py runserver 0.0.0.0:8000
+    ```
+
