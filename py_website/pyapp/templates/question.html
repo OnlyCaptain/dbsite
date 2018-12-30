@@ -2,18 +2,18 @@
 
 {% block content %}
 
-    <p>Question: {{ question }}</p>
+    <p>Question a: {{ question }}</p>
 
-    <!-- <p>Entries:</p>
+    <p>Answers:</p>
     <ul>
-        {% for entry in entries %}
+        {% for answer in answers %}
             <li>
-                <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
-                <p>{{ entry.text|linebreaks }}</p>
+                <p>{{ answer.date_added|date:'M d, Y H:i' }}</p>
+                <p>{{ answer.AnswerWords|linebreaks }}</p>
             </li>
         {% empty %}
-            <li>No entries for this topic yet.</li>
+            <li>No answers for this topic yet.</li>
         {% endfor %}
-    </ul> -->
+    </ul>
 
 {% endblock content %}
