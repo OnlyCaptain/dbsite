@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <p>这个页面列出所有问题</p>
+
+    <ul>
+        {% for question in questions %}
+            <li>
+                <a href="{% url 'question' question.id %}">{{ question }}</a>
+            </li>
+        {% empty %}
+            <li>No topics have been added yet.</li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
