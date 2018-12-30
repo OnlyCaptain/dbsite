@@ -1,8 +1,17 @@
-<div align="right">
+<style>
+    .div-inline{ display:inline} 
+</style>
+<div align="left" class="div-inline">
     <a href="{% url 'index' %}">主页</a>
     <a href="{% url 'questions' %}">问题</a>
-    <a href="{% url 'login' %}">登录</a>
 </div>
-
-
+<div align="right" class="div-inline">
+    {% if request.session.is_login %}
+    <a href="#">当前在线：{{ request.session.user_name }}</a>
+    <a href="/logout">登出</a>
+    {% else %}
+    <a href="/login">登录</a>
+    <a href="/register">注册</a>
+    {% endif %}
+</div>
 {% block content %}{% endblock content %}
