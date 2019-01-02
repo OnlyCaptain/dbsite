@@ -1,12 +1,20 @@
 # README
 
+## 注意
+
+尽量不要修改以下几个文件：
+
+1. ./webpack/webpack.config.js
+2. package.json(package-lock.json)
+3. .babelrc
+
 ## 怎么运行
 
 ```
 npm run dev
 ```
 
-缺什么环境配什么。
+缺什么环境配什么。（可能需要安装node.js，网上找博客随便配）
 
 ## 配环境
 
@@ -51,3 +59,16 @@ npm install --save react
 npm install --save-dev @babel/core...
 ```
 
+## 入口
+
+package.json的
+
+```
+...
+"main": "./src/js/index.js",
+...
+```
+
+webpack会把index.js编译成bundle.js。
+
+用户访问的页面是index.html（里面用到了bundle.js的代码）。
