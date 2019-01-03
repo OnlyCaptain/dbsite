@@ -105,4 +105,48 @@ python manage.py runserver
 <center>
     <img src="media/curl-run.png" >
 </center>
+ 
+
+- 查看某个问题下的答案
+
+  ```bash
+  http://localhost:8000/api/answer/1
+  ```
+
+<center>
+    <img src="media/postman-see-all-ans.png">
+</center>
+
+
+
+- 回答问题
+
+  ```bash
+  http://localhost:8000/api/answer/1
+  ```
+
+<center>
+    <img src="media/postman-ans-ques.png">
+</center>
+
+
+
+- 查看某个问题下的某个答案：
+
+  ```bash
+  http://localhost:8000/api/answer/1/1
+  ```
+<center>
+    <img src="media/postman-see-answer.png">
+</center>
+
+
+- 修改问题
+
+<center>
+    <img src="media/postman-change-ans.png" >
+</center>
+
+
+
 
