@@ -1,12 +1,7 @@
 # -*- coding:utf-8 -*-
 from rest_framework import serializers
-from .models import Task, User, Answer, Question, QuestionToUser, UserFocusQuestion
+from .models import User, Answer, Question, QuestionToUser, UserFocusQuestion
 
-
-class TaskSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Task
-        fields = ('id', 'title', 'description', 'completed', 'create_date')
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
