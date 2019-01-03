@@ -2,13 +2,19 @@
 
 ----
 
-一个简易网站
+[TOC]
 
+-----
 
 ## 文件夹说明
+
+一个网站
+
 ```
 ├── db_site  # JanHoChoi 编写的Django示例
 ├── py_website # OnlyCaptain 编写的带数据库 Quora 示例
+├── rest_api  # 后端
+├── react  # 前端
 └── venv # 虚拟环境
 
 ```
@@ -76,25 +82,25 @@ python manage.py runserver
 
 示例：
 
-- 注册
+### 注册
 
   ```bash
   curl -X POST http://localhost:8000/api/register/ -d "UserName=zhanjzh &Password=zhanjzh"
   ```
 
-- 登录：
+### 登录：
 
   ```bash
   curl -X POST http://localhost:8000/api/login/ -d "UserName=zhanjzh &Password=zhanjzh" 
   ```
 
-- 拉取问题列表：
+### 拉取问题列表：
 
   ```bash
   curl http://localhost:8000/api/questions/ 
   ```
 
-- 拉取详细问题：
+### 拉取详细问题：
 
   ```bash
   curl http://localhost:8000/api/questions/1
@@ -107,31 +113,23 @@ python manage.py runserver
 </center>
  
 
-- 查看某个问题下的答案
-
-  ```bash
-  http://localhost:8000/api/answer/1
-  ```
+### 查看某个问题下的答案
 
 <center>
     <img src="media/postman-see-all-ans.png">
 </center>
 
+--------
 
-
-- 回答问题
-
-  ```bash
-  http://localhost:8000/api/answer/1
-  ```
+### 回答问题
 
 <center>
     <img src="media/postman-ans-ques.png">
 </center>
 
+--------
 
-
-- 查看某个问题下的某个答案：
+### 查看某个问题下的某个答案：
 
   ```bash
   http://localhost:8000/api/answer/1/1
@@ -140,13 +138,12 @@ python manage.py runserver
     <img src="media/postman-see-answer.png">
 </center>
 
+---------
 
-- 修改问题
+### 修改问题
 
 <center>
     <img src="media/postman-change-ans.png" >
 </center>
-
-
 
 
