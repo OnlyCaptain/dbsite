@@ -15,11 +15,12 @@ class Question(models.Model):
     
     问题
     """
+    title = models.CharField(max_length=200)
     Description = models.TextField()   # 创建文本项，没有长度限制
     date_added = models.DateTimeField(auto_now_add=True)   # 使用系统自带的时间
 
     def __str__(self):
-        return self.Description 
+        return self.title
 
 
 class User(models.Model):
