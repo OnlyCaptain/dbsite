@@ -44,7 +44,7 @@ def login(request):
                 return Response(status=status.HTTP_404_NOT_FOUND)
             if user.Password == hash_code(password):
                 transaction.savepoint_commit(sid1) # 正常提交
-                return Response(status=status.HTTP_200_OK)
+                return Response(data=user.id, status=status.HTTP_200_OK)
             else:
                 transaction.savepoint_rollback(sid1) # 回滚
                 return Response(status=status.HTTP_403_FORBIDDEN)

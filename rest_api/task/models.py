@@ -10,19 +10,6 @@ from django.db import models
 #     def __unicode__(self):
 #         return self.title
 
-class Question(models.Model):
-    """
-    
-    问题
-    """
-    title = models.CharField(max_length=200)
-    Description = models.TextField()   # 创建文本项，没有长度限制
-    date_added = models.DateTimeField(auto_now_add=True)   # 使用系统自带的时间
-
-    def __str__(self):
-        return self.title
-
-
 class User(models.Model):
     """
 
@@ -30,6 +17,20 @@ class User(models.Model):
     """
     UserName = models.CharField(max_length=200)  # 长度限制为 200
     Password = models.CharField(max_length=200)  
+
+class Question(models.Model):
+    """
+    
+    问题
+    """
+    Title = models.CharField(max_length=200)
+    QuestionOwner = models.ForeignKey(User, on_delete=models.CASCADE)
+    Description = models.TextField()   # 创建文本项，没有长度限制
+    date_added = models.DateTimeField(auto_now_add=True)   # 使用系统自带的时间
+
+    def __str__(self):
+        return self.title
+
 
 class Answer(models.Model):
     """
