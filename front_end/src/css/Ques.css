@@ -1,0 +1,19 @@
+.container{
+  max-width: 800px;
+}
+.jumbotron .container{
+  position: relative;
+  max-width: 800px;
+}
+form[name="addQuestion"] .btn{
+  margin: 20px 0 0 15px;
+}
+.media-left{
+  text-align: center;
+  width:70px;
+  float: left;
+}
+
+.vote-count{
+  display: block;
+}

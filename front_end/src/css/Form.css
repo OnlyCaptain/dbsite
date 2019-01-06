@@ -1,0 +1,14 @@
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.background-image{
+  height: 200px;
+  background-image: url('../images/background1.jpg');
+  background-size: cover;
+  padding-bottom: 80.97%;
+}
